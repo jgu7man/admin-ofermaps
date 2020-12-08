@@ -1,0 +1,3 @@
+[submodule "gdev-tools"]
+	path = gdev-tools
+	url = https://github.com/jgu7man/gdev-tools

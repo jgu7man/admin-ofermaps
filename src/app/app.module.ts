@@ -1,3 +1,4 @@
+import { GdevToolsModule } from './../../gdev-tools/gdev-tools.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,9 +9,14 @@ import { MaterialModule } from './material.module';
 import { FirebaseModule } from './firebase.module';
 import { ComunesModule } from './comunes.module';
 
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -18,7 +24,8 @@ import { ComunesModule } from './comunes.module';
     BrowserAnimationsModule,
     MaterialModule,
     FirebaseModule,
-    ComunesModule
+    ComunesModule,
+    GdevToolsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
